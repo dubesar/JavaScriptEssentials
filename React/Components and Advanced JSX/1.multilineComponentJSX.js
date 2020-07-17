@@ -18,3 +18,8 @@ class QuoteMaker extends React.Component{
     )
   }
 };
+
+ReactDOM.render(
+  <QuoteMaker />,
+  document.getElementById('app')
+);
