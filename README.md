@@ -1,1 +1,1 @@
-# CodeAcademy_JavaScript_React
+# JavaScript_Essentials
