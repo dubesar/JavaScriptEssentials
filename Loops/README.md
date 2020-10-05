@@ -63,3 +63,30 @@ do {
   cupsAdded += 1
 }while (cupsAdded<cupsOfSugarNeeded)
 ```
+
+### For loop
+
+For Loop is the most common type of loop where there are three parts:
+
+1. Initialization: It is used to initialize loop variable
+
+2. Condition: Decides whether to go inside the loop or not
+
+3. Increment/decrement: Updates the loop variable for next iteration of loop
+
+Syntax
+
+```
+for(initialization; condition; increment/decrement)
+{
+        body of loop;
+}
+```
+
+Example:
+
+```
+for(let i = 5;i<=10;i++){
+  console.log(i)
+}
+```
