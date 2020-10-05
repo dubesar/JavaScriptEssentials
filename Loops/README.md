@@ -40,3 +40,26 @@ while(currentCard!='spade'){
   console.log(currentCard)
 }
 ```
+
+### Do While Loop
+
+The do...while statement repeats until a specified condition evaluates to false.
+
+A do...while statement looks as follows:
+
+```
+do
+  statement
+while (condition);
+```
+
+Unlike other loops statement is always executed once before the condition is checked.
+
+```
+let cupsOfSugarNeeded = 4
+let cupsAdded = 0
+
+do {
+  cupsAdded += 1
+}while (cupsAdded<cupsOfSugarNeeded)
+```
