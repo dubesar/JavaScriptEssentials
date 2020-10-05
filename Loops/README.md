@@ -83,10 +83,83 @@ for(initialization; condition; increment/decrement)
 }
 ```
 
-Example:
+Example 1:
 
 ```
 for(let i = 5;i<=10;i++){
   console.log(i)
 }
 ```
+
+Example 2:
+We can do reversed loop as opposed to incrementing the testing condition:
+
+```
+// The loop below loops from 0 to 3. Edit it to loop backwards from 3 to 0
+for (let counter = 3; counter >= 0; counter--){
+  console.log(counter);
+}
+```
+
+Example 3: Not only the specific values array and string can also be looped to access their value:
+
+Something like this which causes repeated value and code:
+
+```
+// Write your code below
+
+const vacationSpots = ["New York","Seattle","Ohio"]
+
+console.log(vacationSpots[0])
+console.log(vacationSpots[1])
+console.log(vacationSpots[2])
+
+```
+
+Can be converted to something like this:
+
+```
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+for(let i = 0;i<vacationSpots.length;i++){
+  console.log("I would love to visit "+ vacationSpots[i])
+}
+```
+
+Example 4: Sometimes when we are accessing values or looping the statements, the value is found found before the whole loop condition has ended at that case, we can use `break` condition:
+
+```
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+for(let i = 0;i<rapperArray.length;i++){
+  console.log(rapperArray[i])
+  if(rapperArray[i] === "Notorious B.I.G.") break
+}
+
+console.log("And if you don't know, now you know.")
+```
+
+Example 5:
+Sometimes we have got large set of conditions and some complex calculations to be performed in that case nested loop comes into play.
+
+A nested loop is a loop within a loop, an inner loop within the body of an outer one. How this works is that the first pass of the outer loop triggers the inner loop, which executes to completion. Then the second pass of the outer loop triggers the inner loop again. This repeats until the outer loop finishes.
+
+```
+const bobsFollowers = ["Alex", "Mateo","Carie","Marie"]
+
+tinasFollowers = ["Alex","Carie","John"]
+
+let mutualFollowers = []
+
+for(let i = 0; i < bobsFollowers.length ;i++){
+  for(let j = 0; j < tinasFollowers.length; j++){
+    if(bobsFollowers[i] === tinasFollowers[j]){
+      mutualFollowers.push(bobsFollowers[i])
+    }
+  }
+}
+
+console.log(mutualFollowers)
+```
+
+**Note:** These examples performed in for loops can be performed in `while` Loops and `do while` loops as well and vice versa.
